@@ -1,0 +1,16 @@
+[project]
+name = "smerf"
+channels = ["anaconda", "nvidia/label/cuda-12.3.0", "nvidia", "conda-forge", "pytorch"]
+platforms = ["linux-64"]
+
+[tasks]
+
+[dependencies]
+cuda = {version = "*", channel="nvidia/label/cuda-12.3.0"}
+cudnn = {version = "*", channel="anaconda"}
+python = "3.11.*"
+pip = ">=23.3,<24"
+
+
+
+

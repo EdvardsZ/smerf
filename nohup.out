@@ -1,0 +1,89 @@
+++ date +%Y%m%d_%H%M
++ TIMESTAMP=20240711_1047
++ SCENES=(nyc)
++ for SCENE in "${SCENES[@]}"
+++ pwd
++ CHECKPOINT_DIR=/home/edvardsz/Desktop/Projects/smerf/checkpoints/20240711_1047-nyc
++ python3 -m smerf.train --gin_configs=configs/models/smerf.gin --gin_configs=configs/zipnerf/nyc.gin --gin_configs=configs/zipnerf/extras.gin '--gin_bindings=smerf.internal.configs.Config.checkpoint_dir = '\''/home/edvardsz/Desktop/Projects/smerf/checkpoints/20240711_1047-nyc'\''' --alsologtostderr
+2024-07-11 10:47:59.003271: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-07-11 10:47:59.003332: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-07-11 10:47:59.004442: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-07-11 10:47:59.801716: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-07-11 10:48:00.834388: W tensorflow/core/common_runtime/gpu/gpu_device.cc:2256] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+I0711 10:48:00.834618 137013945538048 train.py:61] main() has started!
+I0711 10:48:00.986659 137013945538048 xla_bridge.py:660] Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA
+I0711 10:48:00.987378 137013945538048 xla_bridge.py:660] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+I0711 10:48:00.989320 137013945538048 train.py:83] Loading Gin config...
+/home/edvardsz/Desktop/Projects/smerf/.pixi/envs/default/lib/python3.11/site-packages/jax/_src/xla_bridge.py:945: UserWarning: jax.host_id has been renamed to jax.process_index. This alias will eventually be removed; please update your code.
+  warnings.warn(
+I0711 10:48:01.016517 137013945538048 train.py:102] Loading dataset...
+*** using 2x downsampled images
+*** Finding COLMAP data
+*** Constructing NeRF Scene Manager
+*** Processing COLMAP data
+++ date +%Y%m%d_%H%M
++ TIMESTAMP=20240711_1054
++ SCENES=(nyc)
++ for SCENE in "${SCENES[@]}"
+++ pwd
++ CHECKPOINT_DIR=/home/edvardsz/Desktop/Projects/smerf/checkpoints/20240711_1054-nyc
++ python3 -m smerf.train --gin_configs=configs/models/smerf.gin --gin_configs=configs/zipnerf/nyc.gin --gin_configs=configs/zipnerf/extras.gin '--gin_bindings=smerf.internal.configs.Config.checkpoint_dir = '\''/home/edvardsz/Desktop/Projects/smerf/checkpoints/20240711_1054-nyc'\''' --alsologtostderr
+2024-07-11 10:54:41.644699: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-07-11 10:54:41.644799: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-07-11 10:54:41.695273: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-07-11 10:54:42.871491: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-07-11 10:54:44.664316: W tensorflow/core/common_runtime/gpu/gpu_device.cc:2256] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+I0711 10:54:44.664533 132748862592512 train.py:61] main() has started!
+I0711 10:54:44.859653 132748862592512 xla_bridge.py:660] Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA
+I0711 10:54:44.860569 132748862592512 xla_bridge.py:660] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+I0711 10:54:44.862512 132748862592512 train.py:83] Loading Gin config...
+/home/edvardsz/Desktop/Projects/smerf/.pixi/envs/default/lib/python3.11/site-packages/jax/_src/xla_bridge.py:945: UserWarning: jax.host_id has been renamed to jax.process_index. This alias will eventually be removed; please update your code.
+  warnings.warn(
+I0711 10:54:44.889822 132748862592512 train.py:102] Loading dataset...
+*** using 2x downsampled images
+*** Finding COLMAP data
+*** Constructing NeRF Scene Manager
+*** Processing COLMAP data
+++ date +%Y%m%d_%H%M
++ TIMESTAMP=20240711_1316
++ SCENES=(nyc)
++ for SCENE in "${SCENES[@]}"
+++ pwd
++ CHECKPOINT_DIR=/home/edvardsz/Desktop/Projects/smerf/checkpoints/20240711_1316-nyc
++ python3 -m smerf.train --gin_configs=configs/models/smerf.gin --gin_configs=configs/zipnerf/nyc.gin --gin_configs=configs/zipnerf/extras.gin '--gin_bindings=smerf.internal.configs.Config.checkpoint_dir = '\''/home/edvardsz/Desktop/Projects/smerf/checkpoints/20240711_1316-nyc'\''' --alsologtostderr
+2024-07-11 13:17:02.404140: E external/local_xla/xla/stream_executor/cuda/cuda_dnn.cc:9261] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+2024-07-11 13:17:02.404236: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:607] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+2024-07-11 13:17:02.453867: E external/local_xla/xla/stream_executor/cuda/cuda_blas.cc:1515] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2024-07-11 13:17:03.632616: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:38] TF-TRT Warning: Could not find TensorRT
+2024-07-11 13:17:05.521281: W tensorflow/core/common_runtime/gpu/gpu_device.cc:2256] Cannot dlopen some GPU libraries. Please make sure the missing libraries mentioned above are installed properly if you would like to use GPU. Follow the guide at https://www.tensorflow.org/install/gpu for how to download and setup the required libraries for your platform.
+Skipping registering GPU devices...
+I0711 13:17:05.521504 139160601138688 train.py:61] main() has started!
+I0711 13:17:05.707166 139160601138688 xla_bridge.py:660] Unable to initialize backend 'rocm': NOT_FOUND: Could not find registered platform with name: "rocm". Available platform names are: CUDA
+I0711 13:17:05.708082 139160601138688 xla_bridge.py:660] Unable to initialize backend 'tpu': INTERNAL: Failed to open libtpu.so: libtpu.so: cannot open shared object file: No such file or directory
+I0711 13:17:05.709949 139160601138688 train.py:83] Loading Gin config...
+/home/edvardsz/Desktop/Projects/smerf/.pixi/envs/default/lib/python3.11/site-packages/jax/_src/xla_bridge.py:945: UserWarning: jax.host_id has been renamed to jax.process_index. This alias will eventually be removed; please update your code.
+  warnings.warn(
+I0711 13:17:05.737040 139160601138688 train.py:102] Loading dataset...
+*** using 2x downsampled images
+*** Finding COLMAP data
+*** Constructing NeRF Scene Manager
+*** Processing COLMAP data
+*** Loaded camera parameters for 1001 images
+*** image names sorted alphabetically
+*** Loading images from datasets/nyc/images_2
+*** Loaded 1001 images from disk
+*** Loaded EXIF data for 1001 images
+*** Constructed COLMAP-to-world transform.
+*** Constructed 120 render poses via ellipse path
+*** Constructed train/test split: #train=875 #test=126
+*** LLFF successfully loaded!
+*** split=DataSplit.TRAIN
+*** #images/poses/exposures=875
+*** #camtoworlds=875
+*** resolution=(1168, 1752)
+*** using 2x downsampled images
+*** Finding COLMAP data
+*** Constructing NeRF Scene Manager
+*** Processing COLMAP data
